@@ -5,7 +5,7 @@ public class SoftDrinks {
     public static void main(String[] args) {
         // Testing 5 soft drinks, grades from 7 testers
         int[][] grades = {
-            //0  1  2  3  4 <- soft drink no.
+//           0  1  2  3  4 <- soft drink no.
             {3, 4, 3, 2, 1}, // tester no. 0
             {4, 1, 3, 3},    // tester no. 1
             {3, 1, 1, 1, 5}, // tester no. 2
@@ -32,8 +32,10 @@ public class SoftDrinks {
             }
         }
         System.out.printf("Sum of all grades is %d \n", totalGradeSum);
-        System.out.printf("Average of all grades is %.2f \n\n",
-            (double) totalGradeSum / totalGradeCount);
+        System.out.printf(
+            "Average of all grades is %.2f \n\n",
+            (double) totalGradeSum / totalGradeCount
+        );
 
         // Average grade for each tester
         for (int row = 0; row < grades.length; row++) {
@@ -42,8 +44,10 @@ public class SoftDrinks {
                 rowGradeSum += grades[row][col];
             }
             double testerAverage = (double) rowGradeSum / grades[row].length;
-            System.out.printf("Average of grades for tester %d: %.2f.\n",
-                row, testerAverage);
+            System.out.printf(
+                "Average of grades for tester %d: %.2f.\n",
+                row, testerAverage
+            );
         }
         System.out.println();
 
@@ -60,8 +64,10 @@ public class SoftDrinks {
                 }
             }
             drinkAverage[col] = (double) colGradeSum / colGradeCount;
-            System.out.printf("Average of grades for soft drink no. %d: %.2f.\n",
-                col, drinkAverage[col]);
+            System.out.printf(
+                "Average of grades for soft drink no. %d: %.2f.\n",
+                col, drinkAverage[col]
+            );
         }
         System.out.println();
 
@@ -74,8 +80,10 @@ public class SoftDrinks {
                 indexOfMax = i;
             }
         }
-        System.out.printf("Best soft drink is no. %d with average: %.2f\n",
-            indexOfMax, maxAverage);
+        System.out.printf(
+            "Best soft drink is no. %d with average: %.2f\n",
+            indexOfMax, maxAverage
+        );
         System.out.println();
     }
 }
