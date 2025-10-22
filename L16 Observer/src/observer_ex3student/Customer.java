@@ -1,7 +1,7 @@
 package observer_ex3student;
 
 public class Customer {
-    private final String name; // not empty
+    private String name; // not empty
 
     public Customer(String name) {
         this.name = name;

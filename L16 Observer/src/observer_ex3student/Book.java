@@ -1,7 +1,7 @@
 package observer_ex3student;
 
 public class Book {
-    private final String title; // not empty
+    private String title; // not empty
     private int count;
 
     public Book(String title) {

@@ -6,21 +6,24 @@ public class TestApp {
         // TODO: create a salesman and a purchaser
 
         Book donaldDuck = new Book("Donald Duck");
+
         // TODO: add observers
 
-        // TODO: make purchaser buy 6 copies of donaldDuck
+        // TODO: make purchaser purchase 6 copies of donaldDuck
         System.out.println();
 
         Book java = new Book("Java");
+
         // TODO: add observers
 
-        // TODO: make purchaser buy 8 copies of java
+        // TODO: make purchaser purchase 8 copies of java
         System.out.println();
 
         Book designPatterns = new Book("Design Patterns");
+
         // TODO: add observers
 
-        // TODO: make purchaser buy 10 copies of designPatterns
+        // TODO: make purchaser purchase 10 copies of designPatterns
         System.out.println();
 
         Customer bob = new Customer("Bob");
